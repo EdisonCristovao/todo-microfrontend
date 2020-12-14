@@ -15,9 +15,9 @@ registerApplication({
 });
 
 // registerApplication({
-//   name: "@ec/navbar",
-//   app: () => System.import("@ec/navbar"),
-//   activeWhen: ["/"]
+//   name: "@ec/todo-list",
+//   app: () => System.import("@ec/todo-list"),
+//   activeWhen: (location) => location.pathname === "/list",
 // });
 
 start({

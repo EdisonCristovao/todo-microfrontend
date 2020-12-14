@@ -7,6 +7,7 @@ import {
   Typography,
   makeStyles,
 } from "@material-ui/core";
+import { Link } from "react-router-dom";
 
 const header = () => {
   const classes = useStyles();
@@ -25,8 +26,12 @@ const header = () => {
         <Typography variant="h6" className={classes.title}>
           News
         </Typography>
-        <Button color="inherit">Login</Button>
-        <Button color="inherit">Login</Button>
+        <Link to="/">
+          <Button color="inherit">Home</Button>
+        </Link>
+        <Link to="/list">
+          <Button color="inherit">Lista</Button>
+        </Link>
       </Toolbar>
     </AppBar>
   );
